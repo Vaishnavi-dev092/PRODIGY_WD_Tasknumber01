@@ -1,0 +1,66 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s;
+    z-index: 1000;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  
+  .menu li {
+    margin: 0 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+  }
+  
+  /* Hover effect for menu items */
+  .menu a:hover {
+    color: #9b1b30; /* Wine red color on hover */
+  }
+  
+  /* Style for changing the navbar background color on scroll */
+  .scrolled {
+    background-color: #555; /* Darker background when scrolled */
+  }
+  
+  /* Section styles */
+  .section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Add spacing below navbar to avoid content overlap */
+  .section:first-of-type {
+    padding-top: 120px;
+  }
+  
+  #home { background-color: #e9e4f0; }
+  #about { background-color: #d3c4e3; }
+  #contact { background-color: #b6a1d8; }
+  
